@@ -2,7 +2,9 @@ import styled from '@emotion/styled';
 
 export const Nav = styled.nav``;
 
-export const NavList = styled.ul``;
+export const NavList = styled.ul`
+  padding: 0;
+`;
 export const NavItem = styled.li`
   list-style-type: none;
 `;
