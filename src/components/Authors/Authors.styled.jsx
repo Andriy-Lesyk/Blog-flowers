@@ -10,6 +10,7 @@ export const SectionName = styled.h1`
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 32px;
+  margin: 0;
 `;
 export const CardsBox = styled.div`
   display: flex;
