@@ -11,8 +11,8 @@ export const MainBox = styled.div`
   justify-content: space-between;
 `;
 export const LeftBox = styled.div`
-  width: 330px;
   margin-right: 185px;
+  width: 330px;
 `;
 export const RightBox = styled.div`
   display: grid;
