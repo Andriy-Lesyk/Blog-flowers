@@ -39,7 +39,7 @@ function HeaderModal({ closeModal }) {
             <Input
               type="text"
               style={{ height: '120px', marginBottom: '0' }}
-              placeholder="Your massage"
+              placeholder="Your message"
             />
             <Btn type="submit">Отправить</Btn>
           </ModalForm>

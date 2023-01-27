@@ -5,6 +5,7 @@ import AboutUs from './AboutUs/AboutUs';
 import Gallery from './Gallery/Gallery';
 import BigBuket from './BigBuket/BigBuket';
 import Contacts from './Contacts/Contacts';
+import Footer from './Footer/Footer';
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
       <Gallery />
       <BigBuket />
       <Contacts />
+      <Footer />
     </div>
   );
 };

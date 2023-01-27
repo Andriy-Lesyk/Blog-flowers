@@ -41,7 +41,7 @@ function Contacts() {
             <Input type="email" placeholder="Your email" />
             <Input
               style={{ height: '150px' }}
-              placeholder="Massage"
+              placeholder="Message"
               type="text"
             />
             <FormBtn>Отправить</FormBtn>
