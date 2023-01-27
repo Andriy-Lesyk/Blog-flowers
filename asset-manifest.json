@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Blog-flowers/static/css/main.7acaea2f.css",
+    "main.js": "/Blog-flowers/static/js/main.5760e1ef.js",
+    "static/media/AboutUs.jpg": "/Blog-flowers/static/media/AboutUs.351b4e890509e9a78393.jpg",
+    "static/media/4.jpg": "/Blog-flowers/static/media/4.c540481e5094610c0417.jpg",
+    "static/media/10.jpg": "/Blog-flowers/static/media/10.49f1c17e25e30815eeb0.jpg",
+    "static/media/9.jpg": "/Blog-flowers/static/media/9.d7d7b559dd225baf1e4c.jpg",
+    "static/media/art2.jpg": "/Blog-flowers/static/media/art2.20669cae7431117ee20f.jpg",
+    "static/media/7.jpg": "/Blog-flowers/static/media/7.4b7521678ffe9f88a2b7.jpg",
+    "static/media/Art3.jpg": "/Blog-flowers/static/media/Art3.54ffcbde7c9b75c067ed.jpg",
+    "static/media/6.jpg": "/Blog-flowers/static/media/6.4fccd0cdd61c90af078f.jpg",
+    "static/media/Roses.jpg": "/Blog-flowers/static/media/Roses.4a82952354be030f0f95.jpg",
+    "static/media/art1.jpg": "/Blog-flowers/static/media/art1.a7b25e590af16042933e.jpg",
+    "static/media/1.jpg": "/Blog-flowers/static/media/1.45c524526ee95cc2e87b.jpg",
+    "static/media/Art4.jpg": "/Blog-flowers/static/media/Art4.e23769236b34adb391d9.jpg",
+    "static/media/Art5.jpg": "/Blog-flowers/static/media/Art5.81a57648793c5b649925.jpg",
+    "static/media/11.jpg": "/Blog-flowers/static/media/11.fca38a63a4633d7cd22a.jpg",
+    "static/media/3.jpg": "/Blog-flowers/static/media/3.b9f0d08b106aebf1d5d7.jpg",
+    "static/media/2.jpg": "/Blog-flowers/static/media/2.a7cf60f02e32d8648b2e.jpg",
+    "static/media/aut2.jpg": "/Blog-flowers/static/media/aut2.2d51a65c1dcb95fe8259.jpg",
+    "static/media/8.jpg": "/Blog-flowers/static/media/8.c09fc5d7bcd39722d293.jpg",
+    "static/media/aut4.jpg": "/Blog-flowers/static/media/aut4.465480b44770e132f92d.jpg",
+    "static/media/aut3.jpg": "/Blog-flowers/static/media/aut3.5d269b044bf183770642.jpg",
+    "static/media/5.jpg": "/Blog-flowers/static/media/5.9973cc724c5d738fca79.jpg",
+    "static/media/aut1.jpg": "/Blog-flowers/static/media/aut1.fe38e94c6a75ebf596a2.jpg",
+    "static/media/sprite.svg": "/Blog-flowers/static/media/sprite.e0b94e40cf6ba27efef4094aa4a95019.svg",
+    "index.html": "/Blog-flowers/index.html",
+    "main.7acaea2f.css.map": "/Blog-flowers/static/css/main.7acaea2f.css.map",
+    "main.5760e1ef.js.map": "/Blog-flowers/static/js/main.5760e1ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.5760e1ef.js"
+  ]
+}
