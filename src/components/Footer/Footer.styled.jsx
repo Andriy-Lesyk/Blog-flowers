@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 export const Section = styled.section`
   margin: 96px auto 0;
   background: #2b2b2b;
-  padding: 40px 58px 20px;
   width: 1366px;
+  padding: 40px 58px 20px;
 `;
 export const MainBox = styled.div`
   display: flex;
