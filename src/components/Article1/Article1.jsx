@@ -61,7 +61,7 @@ function Article1() {
           <CardBtn>Читать далее</CardBtn>
         </Card>
         <Card>
-          <CardImg src={Art4} />
+          <CardImg src={Art5} />
           <CardName>Был сорван доклад председателя совхоза</CardName>
           <CardDiscript>
             Идейные соображения высшего порядка, а также существующая теория
