@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
+import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
+import { BsCircleFill } from 'react-icons/bs';
 
 export const Section = styled.section`
   margin-top: 120px;
   display: flex;
-  padding: 0 118px 0 110px;
+  padding: 0 93px 0 85px;
+  align-items: center;
 `;
 export const SectionPart = styled.div`
   &:not(:first-child) {
@@ -46,8 +49,39 @@ export const Number = styled.span`
   font-weight: 600;
   font-size: 20px;
 `;
-export const Img2 = styled.img`
-  display: block;
-
-  margin: 25px auto;
+// export const Img2 = styled.img`
+//   display: block;
+//   margin: 25px auto;
+// `;
+export const BtnRight = styled.button`
+  background-color: transparent;
+  border-color: transparent;
+`;
+export const BtnLeft = styled.button`
+  background-color: transparent;
+  border-color: transparent;
+`;
+export const IconBack = styled(MdArrowBackIos)`
+  width: 25px;
+  height: 26px;
+`;
+export const IconForw = styled(MdArrowForwardIos)`
+  width: 25px;
+  height: 26px;
+`;
+export const Ul = styled.ul`
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 25px auto 0;
+`;
+export const Li = styled.li`
+  &:not(:first-child) {
+    margin-left: 15px;
+  }
+  list-style-type: none;
+`;
+export const Circ = styled(BsCircleFill)`
+  width: 10px;
+  fill: red;
 `;

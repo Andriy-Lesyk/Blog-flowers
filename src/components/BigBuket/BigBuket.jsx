@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'components/Container/Container';
 import {
   Section,
@@ -9,15 +9,44 @@ import {
   Btn,
   Title,
   Number,
-  Img2,
+  Ul,
+  Li,
+  Circ,
+  BtnLeft,
+  BtnRight,
+  IconBack,
+  IconForw,
 } from './BigBuket.styled';
 import Roses from '../../images/Roses.jpg';
-import bul from '../../images/bullits.jpg';
+
+import data from '../../data.json';
 
 function BigBuket() {
+  const [text, setText] = useState(data[1].discript);
+  const [arr, setArr] = useState(data);
+
+  let ind = data.indexOf(data.find(({ discript }) => discript === text));
+
+  function left() {
+    if (ind > 0) {
+      setText(data[ind - 1].discript);
+    }
+  }
+  function right() {
+    if (ind < data.length - 1) {
+      setText(data[ind + 1].discript);
+    }
+  }
   return (
     <Container>
       <Section>
+        <BtnLeft type="button" onClick={left}>
+          <IconBack
+            style={{
+              color: ind === 0 ? '#d5dbdb' : 'black',
+            }}
+          />
+        </BtnLeft>
         <SectionPart style={{ alignItems: 'center' }}>
           <Img src={Roses} />
           <Title>Целой серии</Title>
@@ -25,17 +54,24 @@ function BigBuket() {
         </SectionPart>
         <SectionPart>
           <SectionName>Большой букет</SectionName>
-          <Discription>
-            Но стремящиеся вытеснить традиционное производство, нанотехнологии,
-            которые представляют собой яркий пример континентально-европейского
-            типа политической культуры, будут подвергнуты целой серии
-            независимых исследований. Значимость этих проблем настолько
-            очевидна, что существующая
-          </Discription>
+          <Discription>{text}</Discription>
           <Btn>Читать далее</Btn>
         </SectionPart>
+        <BtnRight type="button" onClick={right}>
+          <IconForw
+            style={{
+              color: ind === data.length - 1 ? '#d5dbdb' : 'black',
+            }}
+          />
+        </BtnRight>
       </Section>
-      <Img2 src={bul} />
+      <Ul>
+        {arr.map(({ id, discript }, i) => (
+          <Li key={id}>
+            <Circ style={{ fill: ind === i ? 'black' : '#d5dbdb' }} />
+          </Li>
+        ))}
+      </Ul>
     </Container>
   );
 }
