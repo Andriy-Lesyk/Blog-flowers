@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Section = styled.section`
   display: flex;
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-top: 40px;
   }
 `;

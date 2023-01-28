@@ -44,7 +44,7 @@ export const Text = styled.p`
   font-weight: 600;
   font-size: 15px;
   color: white;
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-top: 15px;
   }
 `;

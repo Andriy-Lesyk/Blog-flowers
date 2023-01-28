@@ -9,7 +9,7 @@ export const Section = styled.section`
   align-items: center;
 `;
 export const SectionPart = styled.div`
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-left: 40px;
   }
   display: flex;
@@ -76,7 +76,7 @@ export const Ul = styled.ul`
   margin: 25px auto 0;
 `;
 export const Li = styled.li`
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-left: 15px;
   }
   list-style-type: none;

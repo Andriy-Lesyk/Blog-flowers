@@ -18,7 +18,7 @@ export const MainBox = styled.div`
 `;
 export const ContentBox = styled.div`
   margin: 0;
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-left: 40px;
   }
 `;

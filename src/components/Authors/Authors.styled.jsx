@@ -20,7 +20,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-left: 30px;
   }
 `;

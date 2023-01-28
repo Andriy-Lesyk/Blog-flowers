@@ -19,7 +19,7 @@ export const GallaryBox = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-left: 15px;
   }
 `;
