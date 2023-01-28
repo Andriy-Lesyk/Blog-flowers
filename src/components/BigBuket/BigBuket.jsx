@@ -23,7 +23,7 @@ import data from '../../data.json';
 
 function BigBuket() {
   const [text, setText] = useState(data[1].discript);
-  const [arr, setArr] = useState(data);
+  const arr = data;
 
   let ind = data.indexOf(data.find(({ discript }) => discript === text));
 
