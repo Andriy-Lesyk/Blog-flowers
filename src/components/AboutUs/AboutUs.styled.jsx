@@ -9,9 +9,9 @@ export const Section = styled.section`
 export const SectionName = styled.h2`
   margin: 0;
   margin-bottom: 40px;
+  font-size: 32px;
   font-family: 'Open Sans';
   font-weight: 700;
-  font-size: 32px;
 `;
 export const MainBox = styled.div`
   display: flex;
