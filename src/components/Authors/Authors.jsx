@@ -19,6 +19,7 @@ function Authors() {
   return (
     <Container>
       <Section>
+        <a name="Authors"></a>
         <SectionName>Популярные авторы</SectionName>
         <CardsBox>
           <Card>

@@ -17,7 +17,9 @@ function Contacts() {
   return (
     <Container>
       <Section>
-        <SectionName>Контакты</SectionName>
+        <a name="Contact">
+          <SectionName>Контакты</SectionName>
+        </a>
         <ContentBox>
           <ContentColumn>
             <MainText>

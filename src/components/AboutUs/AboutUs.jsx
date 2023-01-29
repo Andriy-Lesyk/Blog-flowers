@@ -16,7 +16,9 @@ function AboutUs() {
   return (
     <Container>
       <Section>
-        <SectionName>О нас</SectionName>
+        <a name="AboutUs">
+          <SectionName>О нас</SectionName>
+        </a>
         <MainBox>
           <ContentBox>
             <TextName>Органический трафик</TextName>
