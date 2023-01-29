@@ -18,7 +18,6 @@ function Article1() {
   return (
     <Container>
       <Section>
-        <a name="top"></a>
         <Card>
           <CardImg src={Art1} />
           <CardName>Окрестности Тулы оросил далёкий барабанный бой</CardName>

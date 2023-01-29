@@ -9,6 +9,7 @@ import {
   Position,
   AuthorName,
   SectionBtn,
+  Linc,
 } from './Authors.styled';
 import aut1 from '../../images/aut1.jpg';
 import aut2 from '../../images/aut2.jpg';
@@ -19,7 +20,7 @@ function Authors() {
   return (
     <Container>
       <Section>
-        <a name="Authors"></a>
+        <Linc href="#" name="Authors"></Linc>
         <SectionName>Популярные авторы</SectionName>
         <CardsBox>
           <Card>

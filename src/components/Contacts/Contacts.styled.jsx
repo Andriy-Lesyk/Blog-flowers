@@ -65,3 +65,4 @@ export const FormBtn = styled.button`
   color: #ffffff;
   border-color: #eb174a;
 `;
+export const Linc = styled.a``;

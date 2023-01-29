@@ -42,3 +42,4 @@ export const Text = styled.p`
   font-size: 17px;
   line-height: 26px;
 `;
+export const Linc = styled.a``;

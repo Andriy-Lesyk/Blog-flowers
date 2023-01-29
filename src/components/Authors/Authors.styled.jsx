@@ -43,3 +43,4 @@ export const SectionBtn = styled.button`
   border-radius: 30px;
   margin-top: 30px;
 `;
+export const Linc = styled.a``;

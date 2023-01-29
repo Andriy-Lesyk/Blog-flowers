@@ -9,6 +9,7 @@ import {
   TextName,
   MidleText,
   Text,
+  Linc,
 } from './AboutUs.styled';
 import About from '../../images/AboutUs.jpg';
 
@@ -16,9 +17,8 @@ function AboutUs() {
   return (
     <Container>
       <Section>
-        <a name="AboutUs">
-          <SectionName>О нас</SectionName>
-        </a>
+        <Linc href="#" name="AboutUs"></Linc>
+        <SectionName>О нас</SectionName>
         <MainBox>
           <ContentBox>
             <TextName>Органический трафик</TextName>

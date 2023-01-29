@@ -6,7 +6,7 @@ function Navigation() {
     <Nav>
       <NavList>
         <NavItem>
-          <NavItemLink href="#top">Статьи</NavItemLink>
+          <NavItemLink href="#">Статьи</NavItemLink>
           <NavItemLink href="#AboutUs">О нас </NavItemLink>
           <NavItemLink href="#Authors">Авторы</NavItemLink>
           <NavItemLink href="#Contact">Контакты</NavItemLink>

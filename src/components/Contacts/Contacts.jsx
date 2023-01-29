@@ -11,15 +11,15 @@ import {
   Form,
   Input,
   FormBtn,
+  Linc,
 } from './Contacts.styled';
 
 function Contacts() {
   return (
     <Container>
       <Section>
-        <a name="Contact">
-          <SectionName>Контакты</SectionName>
-        </a>
+        <Linc href="#" name="Contact"></Linc>
+        <SectionName>Контакты</SectionName>
         <ContentBox>
           <ContentColumn>
             <MainText>
