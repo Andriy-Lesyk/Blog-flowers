@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Form, Field } from 'formik';
 
 export const Overlay = styled.div`
   position: fixed;
@@ -13,7 +14,7 @@ export const Overlay = styled.div`
   z-index: 1200;
 `;
 
-export const ModalForm = styled.form`
+export const ModalForm = styled(Form)`
   display: flex;
   flex-direction: column;
 `;
@@ -37,21 +38,42 @@ export const ModalTitle = styled.h2`
   margin: 20px 0;
 `;
 
-export const Input = styled.input`
+export const Input = styled(Field)`
   width: 570px;
   height: 36px;
   border-radius: 30px;
+  border: 1px solid #828282;
   padding: 0 15px;
-  display: block;
   &:not(:last-child) {
     margin-bottom: 15px;
   }
-  &::placeholder {
+  ::placeholder {
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 13px;
   }
+  &:hover,
+  &:focus {
+    border-color: black;
+  }
 `;
+export const Coment = styled.textarea`
+  width: 570px;
+  height: 120px;
+  border-radius: 30px;
+  border: 1px solid #828282;
+  padding: 11px 0 0 15px;
+  ::placeholder {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 13px;
+  }
+  &:hover,
+  &:focus {
+    border-color: black;
+  }
+`;
+
 export const Btn = styled.button`
   height: 40px;
   width: 570px;
@@ -62,7 +84,10 @@ export const Btn = styled.button`
   font-weight: 700;
   font-size: 15px;
   border-color: #eb174a;
-  margin-top: 30px;
+  margin-top: 20px;
+  &:hover {
+    scale: 1.03;
+  }
 `;
 export const ModalBtnClose = styled.button`
   background-color: transparent;
@@ -75,4 +100,7 @@ export const ModalBtnClose = styled.button`
   position: absolute;
   top: 10px;
   left: 560px;
+  &:hover {
+    scale: 1.1;
+  }
 `;

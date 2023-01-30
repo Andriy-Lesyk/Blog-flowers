@@ -39,4 +39,8 @@ export const CardBtn = styled.button`
   font-weight: 600;
   font-size: 14px;
   margin-top: 15px;
+  &:hover,
+  &:focus {
+    scale: 1.05;
+  }
 `;

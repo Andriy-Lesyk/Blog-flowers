@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Form, Field } from 'formik';
 
 export const Section = styled.section`
   margin-top: 164px;
@@ -40,8 +41,8 @@ export const Text = styled.p`
   font-size: 14px;
   line-height: 24px;
 `;
-export const Form = styled.form``;
-export const Input = styled.input`
+export const ContactForm = styled(Form)``;
+export const Input = styled(Field)`
   width: 406px;
   height: 40px;
   border: 1px solid #828282;
@@ -52,6 +53,27 @@ export const Input = styled.input`
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 14px;
+  }
+  &:hover,
+  &:focus {
+    border-color: black;
+  }
+`;
+export const Coment = styled.textarea`
+  width: 406px;
+  height: 150px;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 11px 0 0 15px;
+  &::placeholder {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+  }
+  &:hover,
+  &:focus {
+    border-color: black;
   }
 `;
 export const FormBtn = styled.button`
@@ -64,5 +86,9 @@ export const FormBtn = styled.button`
   font-size: 14px;
   color: #ffffff;
   border-color: #eb174a;
+  &:hover,
+  &:focus {
+    scale: 1.03;
+  }
 `;
 export const Linc = styled.a``;

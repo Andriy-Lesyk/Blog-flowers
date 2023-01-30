@@ -42,5 +42,9 @@ export const SectionBtn = styled.button`
   height: 44px;
   border-radius: 30px;
   margin-top: 30px;
+  &:hover,
+  &:focus {
+    scale: 1.05;
+  }
 `;
 export const Linc = styled.a``;

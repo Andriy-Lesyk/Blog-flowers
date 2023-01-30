@@ -17,4 +17,7 @@ export const Btn = styled.button`
   font-weight: 600;
   font-size: 16px;
   border-color: #eb174a;
+  &:hover {
+    scale: 1.05;
+  }
 `;

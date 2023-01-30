@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Formik } from 'formik';
 import {
   Overlay,
   ModalForm,
@@ -7,6 +8,7 @@ import {
   Input,
   Btn,
   ModalBtnClose,
+  Coment,
 } from './HeaderModal.styled';
 
 function HeaderModal({ closeModal }) {
@@ -27,25 +29,58 @@ function HeaderModal({ closeModal }) {
       closeModal();
     }
   };
+  const handleSubmit = async (values, { resetForm }) => {
+    console.log('submit');
+    resetForm();
+  };
   return (
     <div>
-      <Overlay onClick={handleBackdropClick}>
-        <Modal>
-          <ModalTitle>Обратная связь</ModalTitle>
-          <ModalForm>
-            <Input type="text" placeholder="Your name" />
-            <Input type="tel" placeholder="Your phone" />
-            <Input type="email" placeholder="Your email" />
-            <Input
-              type="text"
-              style={{ height: '120px', marginBottom: '0' }}
-              placeholder="Your message"
-            />
-            <Btn type="submit">Отправить</Btn>
-          </ModalForm>
-          <ModalBtnClose onClick={closeModal}>x</ModalBtnClose>
-        </Modal>
-      </Overlay>
+      <Formik
+        onSubmit={handleSubmit}
+        initialValues={{ name: '', phone: '', email: '', message: '' }}
+      >
+        {({ values, handleChange, isSubmitting }) => (
+          <Overlay onClick={handleBackdropClick}>
+            <Modal>
+              <ModalTitle>Обратная связь</ModalTitle>
+              <ModalForm>
+                <Input
+                  type="text"
+                  placeholder="Your name"
+                  name="name"
+                  onChange={handleChange}
+                  value={values.name}
+                />
+                <Input
+                  type="tel"
+                  placeholder="Your phone"
+                  name="phone"
+                  onChange={handleChange}
+                  value={values.phone}
+                />
+                <Input
+                  type="email"
+                  placeholder="Your email"
+                  name="email"
+                  onChange={handleChange}
+                  value={values.email}
+                />
+                <Coment
+                  type="text"
+                  placeholder="Your message"
+                  name="message"
+                  onChange={handleChange}
+                  value={values.message}
+                />
+                <Btn type="submit" disabled={isSubmitting}>
+                  Отправить
+                </Btn>
+              </ModalForm>
+              <ModalBtnClose onClick={closeModal}>x</ModalBtnClose>
+            </Modal>
+          </Overlay>
+        )}
+      </Formik>
     </div>
   );
 }

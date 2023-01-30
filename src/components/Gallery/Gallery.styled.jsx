@@ -37,4 +37,8 @@ export const Btn = styled.button`
   font-weight: 600;
   font-size: 15px;
   margin-top: 40px;
+  &:hover,
+  &:focus {
+    scale: 1.05;
+  }
 `;

@@ -65,6 +65,10 @@ export const IconLink = styled.a`
   &:not(:last-child) {
     margin-right: 25px;
   }
+  &:hover,
+  &:focus {
+    scale: 1.1;
+  }
 `;
 export const Icon = styled.svg`
   width: 24px;

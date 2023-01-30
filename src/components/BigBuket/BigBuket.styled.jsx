@@ -36,6 +36,10 @@ export const Btn = styled.button`
   font-family: 'Open Sans';
   font-weight: 600;
   font-size: 16px;
+  &:hover,
+  &:focus {
+    scale: 1.05;
+  }
 `;
 export const Title = styled.span`
   margin-top: 10px;
