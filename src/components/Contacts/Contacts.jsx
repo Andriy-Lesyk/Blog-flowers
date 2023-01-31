@@ -1,5 +1,6 @@
 import React from 'react';
-import { Formik } from 'formik';
+import { Formik, ErrorMessage } from 'formik';
+import Validation from 'components/Validation/Validation';
 import Container from 'components/Container/Container';
 import {
   Section,
@@ -14,6 +15,8 @@ import {
   FormBtn,
   Linc,
   Coment,
+  Error,
+  InputContainer,
 } from './Contacts.styled';
 
 function Contacts() {
@@ -25,6 +28,7 @@ function Contacts() {
     <Formik
       onSubmit={handleSubmit}
       initialValues={{ name: '', phone: '', email: '', message: '' }}
+      validationSchema={Validation}
     >
       {({ values, handleChange }) => (
         <Container>
@@ -49,34 +53,54 @@ function Contacts() {
               </ContentColumn>
 
               <ContactForm>
-                <Input
-                  type="text"
-                  placeholder="Your name"
-                  name="name"
-                  onChange={handleChange}
-                  value={values.name}
-                />
-                <Input
-                  type="tel"
-                  placeholder="Your phone"
-                  name="phone"
-                  onChange={handleChange}
-                  value={values.phone}
-                />
-                <Input
-                  type="email"
-                  placeholder="Your email"
-                  name="email"
-                  onChange={handleChange}
-                  value={values.email}
-                />
-                <Coment
-                  placeholder="Message"
-                  type="text"
-                  name="message"
-                  onChange={handleChange}
-                  value={values.message}
-                />
+                <InputContainer>
+                  <Input
+                    type="text"
+                    placeholder="Your name"
+                    name="name"
+                    onChange={handleChange}
+                    value={values.name}
+                  />
+                  <Error>
+                    <ErrorMessage name="name" />
+                  </Error>
+                </InputContainer>
+                <InputContainer>
+                  <Input
+                    type="tel"
+                    placeholder="Your phone"
+                    name="phone"
+                    onChange={handleChange}
+                    value={values.phone}
+                  />
+                  <Error>
+                    <ErrorMessage name="phone" />
+                  </Error>
+                </InputContainer>
+                <InputContainer>
+                  <Input
+                    type="email"
+                    placeholder="Your email"
+                    name="email"
+                    onChange={handleChange}
+                    value={values.email}
+                  />
+                  <Error>
+                    <ErrorMessage name="email" />
+                  </Error>
+                </InputContainer>
+                <InputContainer>
+                  <Coment
+                    placeholder="Message"
+                    type="text"
+                    name="message"
+                    onChange={handleChange}
+                    value={values.message}
+                  />
+                  <Error>
+                    <ErrorMessage name="message" />
+                  </Error>
+                </InputContainer>
                 <FormBtn type="submit">Отправить</FormBtn>
               </ContactForm>
             </ContentBox>

@@ -104,3 +104,16 @@ export const ModalBtnClose = styled.button`
     scale: 1.1;
   }
 `;
+export const Error = styled.p`
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  top: -6px;
+  left: 14px;
+  margin: 0;
+  background-color: white;
+  padding: 0 5px;
+`;
+export const InputContainer = styled.div`
+  position: relative;
+`;

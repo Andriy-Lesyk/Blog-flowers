@@ -92,3 +92,16 @@ export const FormBtn = styled.button`
   }
 `;
 export const Linc = styled.a``;
+export const Error = styled.p`
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  top: -6px;
+  left: 10px;
+  margin: 0;
+  background-color: white;
+  padding: 0 5px;
+`;
+export const InputContainer = styled.div`
+  position: relative;
+`;
