@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'components/Container/Container';
+import { useDispatch, useSelector } from 'react-redux';
+import { increment } from '../../redux/store';
 import {
   Section,
   SectionPart,
@@ -22,25 +24,28 @@ import Roses from '../../images/Roses.jpg';
 import data from '../../data.json';
 
 function BigBuket() {
-  const [text, setText] = useState(data[1].discript);
-  const arr = data;
+  let tex = useSelector(state => state.text);
+  const dat = useSelector(state => state.data);
+  const dispatch = useDispatch();
 
-  let ind = data.indexOf(data.find(({ discript }) => discript === text));
+  let ind = dat.indexOf(dat.find(({ discript }) => discript === tex));
 
   function left() {
     if (ind > 0) {
-      setText(data[ind - 1].discript);
+      tex = dat[ind - 1].discript;
     }
+    return tex;
   }
   function right() {
-    if (ind < data.length - 1) {
-      setText(data[ind + 1].discript);
+    if (ind < dat.length - 1) {
+      tex = data[ind + 1].discript;
     }
+    return tex;
   }
   return (
     <Container>
       <Section>
-        <BtnLeft type="button" onClick={left}>
+        <BtnLeft type="button" onClick={() => dispatch(increment(left()))}>
           <IconBack
             style={{
               color: ind === 0 ? '#d5dbdb' : 'black',
@@ -54,19 +59,19 @@ function BigBuket() {
         </SectionPart>
         <SectionPart>
           <SectionName>Большой букет</SectionName>
-          <Discription>{text}</Discription>
+          <Discription>{tex}</Discription>
           <Btn>Читать далее</Btn>
         </SectionPart>
-        <BtnRight type="button" onClick={right}>
+        <BtnRight type="button" onClick={() => dispatch(increment(right()))}>
           <IconForw
             style={{
-              color: ind === data.length - 1 ? '#d5dbdb' : 'black',
+              color: ind === dat.length - 1 ? '#d5dbdb' : 'black',
             }}
           />
         </BtnRight>
       </Section>
       <Ul>
-        {arr.map(({ id, discript }, i) => (
+        {dat.map(({ id, discript }, i) => (
           <Li key={id}>
             <Circ style={{ fill: ind === i ? 'black' : '#d5dbdb' }} />
           </Li>
