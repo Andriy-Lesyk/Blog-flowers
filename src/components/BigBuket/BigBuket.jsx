@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from 'components/Container/Container';
 import { useDispatch, useSelector } from 'react-redux';
 import { increment } from '../../redux/store';
@@ -11,7 +10,7 @@ import {
   Btn,
   Title,
   Number,
-  Ul,
+  Ol,
   Li,
   Circ,
   BtnLeft,
@@ -20,8 +19,6 @@ import {
   IconForw,
 } from './BigBuket.styled';
 import Roses from '../../images/Roses.jpg';
-
-import data from '../../data.json';
 
 function BigBuket() {
   let tex = useSelector(state => state.text);
@@ -38,7 +35,13 @@ function BigBuket() {
   }
   function right() {
     if (ind < dat.length - 1) {
-      tex = data[ind + 1].discript;
+      tex = dat[ind + 1].discript;
+    }
+    return tex;
+  }
+  function handleClickDot(e) {
+    if (typeof e.target.parentElement.parentElement.value === 'number') {
+      tex = dat[e.target.parentElement.parentElement.value].discript;
     }
     return tex;
   }
@@ -70,13 +73,13 @@ function BigBuket() {
           />
         </BtnRight>
       </Section>
-      <Ul>
+      <Ol onClick={e => dispatch(increment(handleClickDot(e)))}>
         {dat.map(({ id, discript }, i) => (
-          <Li key={id}>
+          <Li key={id} value={i}>
             <Circ style={{ fill: ind === i ? 'black' : '#d5dbdb' }} />
           </Li>
         ))}
-      </Ul>
+      </Ol>
     </Container>
   );
 }

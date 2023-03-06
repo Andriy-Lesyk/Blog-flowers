@@ -53,10 +53,6 @@ export const Number = styled.span`
   font-weight: 600;
   font-size: 20px;
 `;
-// export const Img2 = styled.img`
-//   display: block;
-//   margin: 25px auto;
-// `;
 export const BtnRight = styled.button`
   background-color: transparent;
   border-color: transparent;
@@ -73,7 +69,7 @@ export const IconForw = styled(MdArrowForwardIos)`
   width: 25px;
   height: 26px;
 `;
-export const Ul = styled.ul`
+export const Ol = styled.ol`
   display: flex;
   justify-content: center;
   width: max-content;
